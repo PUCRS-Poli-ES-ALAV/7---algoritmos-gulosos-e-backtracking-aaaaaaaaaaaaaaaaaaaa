@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class main {
 
-    private static void troco(Float valor){
+    private static void troco(Float valor,float[] moedas){
         int iterations = 0;
-        float[] moedas = {100, 25, 10, 5, 1};
+        //float[] moedas = {100, 25, 10, 5, 1};
         int[] quant_moedas = {0, 0, 0, 0, 0};
         for(int i = 0; i < moedas.length; i++){
             iterations++;
@@ -124,7 +124,13 @@ public class main {
         // --- TROCO ---
         System.out.print("Digite um valor para troco: ");
         Float valor = sc.nextFloat();
-        troco(valor);
+        float[] moedas = {100,25,10,5,1 };
+
+        troco(valor,moedas);
+
+         moedas = new float[]{100, 50, 25, 10, 1};
+        troco(valor,moedas);
+
         System.out.println();
 
         // --- INTERVALO ---
