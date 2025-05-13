@@ -124,7 +124,7 @@ public class main {
         // --- TROCO ---
         System.out.print("Digite um valor para troco: ");
         Float valor = sc.nextFloat();
-        float[] moedas = {100,25,10,5,1 };
+        float[] moedas = {25,10,1};
 
         troco(valor,moedas);
 
